@@ -1,0 +1,33 @@
+export const SHOW_LOADER = 'SHOW_LOADER';
+export const HIDE_LOADER = 'HIDE_LOADER';
+export const SHOW_TOAST = 'SHOW_TOAST';
+export const HIDE_TOAST = 'HIDE_TOAST';
+export const AUTH_LOG_IN = 'AUTH_LOG_IN';
+export const AUTH_LOG_IN_SUCCESS = 'AUTH_LOG_IN_SUCCESS';
+export const AUTH_LOG_IN_FAIL = 'AUTH_LOG_IN_FAIL';
+export const SHOW_MODAL = 'SHOW_MODAL';
+export const HIDE_MODAL = 'HIDE_MODAL';
+export const NAV_STATE = 'NAV_STATE';
+export const SET_PICTURE = 'SET_PICTURE';
+export const REMOVE_PICTURE = 'REMOVE_PICTURE';
+export const AUTH_SIGNUP = 'AUTH_SIGNUP';
+export const AUTH_SIGNUP_SUCCESS = 'AUTH_SIGNUP_SUCCESS';
+export const AUTH_SIGNUP_FAIL = 'AUTH_SIGNUP_FAIL';
+export const PROFILE_ADD_USER = 'PROFILE_ADD_USER';
+export const PROFILE_ADD_USER_SUCCESS = 'PROFILE_ADD_USER_SUCCESS';
+export const PROFILE_ADD_USER_FAIL = 'PROFILE_ADD_USER_FAIL';
+export const FORGOT_PASSWORD = 'FORGOT_PASSWORD';
+export const FORGOT_PASSWORD_SUCCESS = 'FORGOT_PASSWORD_SUCCESS';
+export const FORGOT_PASSWORD_FAIL = 'FORGOT_PASSWORD_FAIL';
+
+// token type
+export const GET_TOKEN = 'GET_TOKEN';
+export const GET_TOKEN_SUCCESS = 'GET_TOKEN_SUCCESS';
+export const GET_TOKEN_FAIL = 'GET_TOKEN_FAIL';
+export const POST_TOKEN = 'POST_TOKEN';
+export const POST_TOKEN_SUCCESS = 'POST_TOKEN_SUCCESS';
+export const POST_TOKEN_FAIL = 'POST_TOKEN_FAIL';
+// logout type
+export const LOGOUT = 'LOGOUT';
+export const LOGOUT_SUCCESS = 'LOGOUT_SUCCESS';
+export const LOGOUT_FAIL = 'LOGOUT_FAIL';
