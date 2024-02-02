@@ -1,3 +1,4 @@
+import CircleAvatar from '@assets/svg/CircleAvatar';
 import {Images, Routes} from '@constants';
 
 export const chooseItem = [
@@ -87,3 +88,31 @@ export const shortsData = [
     title: 'Config 2022 Opening Keynote - Dylan Field',
   },
 ];
+
+export const profilesDataSubscription =[
+  {
+    id: 1,
+    img: Images.PROFILE_AVATAR,
+    text: 'Kola Bear',
+  },
+  {
+    id: 2,
+    img: Images.PROFILE_AVATAR,
+    text: 'Kola Bear',
+  },
+  {
+    id: 3,
+    img: Images.PROFILE_AVATAR,
+    text: 'Kola Bear',
+  },
+  {
+    id: 4,
+    img: Images.PROFILE_AVATAR,
+    text: 'Kola Bear',
+  },
+  {
+    id: 5,
+    img: Images.PROFILE_AVATAR,
+    text: 'Kola Bear',
+  },
+]

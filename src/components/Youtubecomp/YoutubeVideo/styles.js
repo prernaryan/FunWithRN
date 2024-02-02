@@ -21,7 +21,7 @@ export default {
   },
   vdoText: {
     ...FontWithBold.Bold_400,
-    FontSize: fontPixel(Value.CONSTANT_VALUE_16),
+    fontSize: fontPixel(Value.CONSTANT_VALUE_16),
     marginRight: widthPixel(Value.CONSTANT_VALUE_30),
   },
   shortsRow: {
@@ -38,12 +38,12 @@ export default {
   },
   shorts: {
     ...FontWithBold.Bold_500,
-    FontSize: fontPixel(Value.CONSTANT_VALUE_16),
+    fontSize: fontPixel(Value.CONSTANT_VALUE_16),
     alignItems: Alignment.CENTER,
   },
   shortstitleText: {
     ...FontWithBold.Bold_400,
-    FontSize: fontPixel(Value.CONSTANT_VALUE_14),
+    fontSize: fontPixel(Value.CONSTANT_VALUE_14),
     margin: widthPixel(Value.CONSTANT_VALUE_8),
   },
   moreIcon: {

@@ -1,10 +1,8 @@
 import NavigationIcon from '@components/navIcon/NavigationIcon';
 import {useTheme} from '../../../theme/ThemeProvider';
 import React from 'react';
-
 import {View, Pressable, StyleSheet, Text} from 'react-native';
-import {Routes} from '@constants';
-import {widthPixel} from '@utils/responsive';
+import {isIOS, widthPixel} from '@utils/responsive';
 import {getTabName} from '@utils/commonFunctions';
 
 const TabBar = ({state, descriptors, navigation}) => {
@@ -20,8 +18,7 @@ const TabBar = ({state, descriptors, navigation}) => {
       flex: 1,
       justifyContent: 'center',
       alignItems: 'center',
-      marginVertical: 20,
-      borderRadius: 1,
+      marginVertical: isIOS()? 10:0,
       borderColor: '#333B42',
       borderTopWidth: 1,
     },
@@ -58,7 +55,7 @@ const TabBar = ({state, descriptors, navigation}) => {
                   justifyContent: 'center',
                   alignItems: 'center',
                   flex: 1,
-                  paddingVertical: 5,
+                  marginVertical: 2,
                   width: widthPixel(110),
                 }}>
                 <NavigationIcon

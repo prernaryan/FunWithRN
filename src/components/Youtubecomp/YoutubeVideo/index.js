@@ -1,4 +1,4 @@
-import {View, Text, FlatList} from 'react-native';
+import {View, Text, FlatList, TouchableOpacity} from 'react-native';
 import React from 'react';
 import styles from './styles';
 import {useTheme} from '../../../theme/ThemeProvider';
@@ -16,32 +16,42 @@ const YoutubeVideo = ({text}) => {
     return (
       <View
         style={[styles.shortsCotainer, {backgroundColor: Colors.labelBack}]}>
-        <More Colors={Colors} style={styles.moreIcon}  width={widthPixel(Value.CONSTANT_VALUE_16)}
-          height={heightPixel(Value.CONSTANT_VALUE_16)}/>
+        <More
+          Colors={Colors}
+          style={styles.moreIcon}
+          width={widthPixel(Value.CONSTANT_VALUE_16)}
+          height={heightPixel(Value.CONSTANT_VALUE_16)}
+        />
         <Text style={[styles.shortstitleText, {color: Colors.text}]}>
           {item.title}
         </Text>
       </View>
     );
   };
-
+  const VideoComp = () => {
+    return (
+      <TouchableOpacity>
+        <View
+          style={[styles.mainContainer, {backgroundColor: Colors.labelBack}]}
+        />
+        <View style={styles.row}>
+          <Avatar
+            width={widthPixel(Value.CONSTANT_VALUE_28)}
+            height={heightPixel(Value.CONSTANT_VALUE_28)}
+          />
+          <Text style={[styles.vdoText, {color: Colors.text}]}>{text}</Text>
+          <More
+            Colors={Colors}
+            width={widthPixel(Value.CONSTANT_VALUE_16)}
+            height={heightPixel(Value.CONSTANT_VALUE_16)}
+          />
+        </View>
+      </TouchableOpacity>
+    );
+  };
   return (
     <>
-      <View
-        style={[styles.mainContainer, {backgroundColor: Colors.labelBack}]}
-      />
-      <View style={styles.row}>
-        <Avatar
-          width={widthPixel(Value.CONSTANT_VALUE_28)}
-          height={heightPixel(Value.CONSTANT_VALUE_28)}
-        />
-        <Text style={[styles.vdoText, {color: Colors.text}]}>{text}</Text>
-        <More
-          Colors={Colors}
-          width={widthPixel(Value.CONSTANT_VALUE_16)}
-          height={heightPixel(Value.CONSTANT_VALUE_16)}
-        />
-      </View>
+    <VideoComp/>
       <View style={styles.shortsRow}>
         <ShortsIconRed />
         <Text style={[styles.shorts, {color: Colors.text}]}>

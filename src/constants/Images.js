@@ -23,4 +23,5 @@ export const Images = {
   SUBSCRIPTION: require('../assets/icons/subscription/subscription.png'),
   LIBRARY: require('../assets/icons/library/library.png'),
   YOUTUBE_LOGO: require('../assets/icons/youtubeLogo/YoutubeLogo.png'),
+  PROFILE_AVATAR: require('../assets/images/profileAvatar/profileAvatar.png')
 };

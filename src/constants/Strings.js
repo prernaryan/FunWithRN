@@ -1,4 +1,18 @@
 export const Strings = {
   VIDEO_TEXT: 'Config 2022 Opening Keynote - Dylan \nField',
   SHORT: 'Shorts',
+  ALL: 'All',
+  HISTORY: 'History',
+  VIEW_ALL: 'View all',
+  PLAY_LIST: 'Play lists',
+  WHAT_FIGMA: '',
+  VIDEO_NAME: '@stevenhechinese',
+  SUBSCRIBE: 'Subscribe',
+  VIDEO_DETAIL: 'How ASIANS PackHow ASIANS Packck \nLunch Steven He',
+  ORIGINAL_SOUND: 'Original Sound',
+  COUNTS: '24K',
+  DISLIKE: 'Dislike',
+  COMMENT_NO: '106',
+  SHARE:'Share',
+  REMIX:'Remix',
 };
