@@ -6,6 +6,7 @@ import EntryScreen from '@screens/EntryScreen';
 import NetflixNav from './NetflixNav/NetflixNav';
 import YouTubeNav from './YouTubeNav/YouTubeNav';
 import {setTopLevelNavigator} from '@service/NavigationServices';
+import Login from '@screens/Auth/Login';
 
 const Stack = createNativeStackNavigator();
 
@@ -15,7 +16,8 @@ const Main = () => {
       ref={navigationRef => setTopLevelNavigator(navigationRef)}>
       <Stack.Navigator
         screenOptions={{headerShown: false}}
-        initialRouteName={Routes.EntryScreen}>
+        initialRouteName={Routes.Login}>
+           <Stack.Screen name={Routes.Login} component={Login} />
         <Stack.Screen name={Routes.EntryScreen} component={EntryScreen} />
         <Stack.Screen name={Routes.NetflixNav} component={NetflixNav} />
         <Stack.Screen name={Routes.YouTubeNav} component={YouTubeNav} />

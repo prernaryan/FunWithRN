@@ -6,3 +6,4 @@ export * from './Images';
 export * from './Schemas';
 export * from './Strings';
 export * from './globleStyle';
+export * from './YoutubeData';

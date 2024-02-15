@@ -2,6 +2,7 @@ import {Alignment, Value} from '@constants';
 import {
   FontWithBold,
   fontPixel,
+  height,
   heightPixel,
   widthPixel,
 } from '@utils/responsive';
@@ -9,6 +10,8 @@ import {
 export default {
   mainContainer: {
     paddingVertical: heightPixel(Value.CONSTANT_VALUE_105),
+    // height:105,
+    // width:'100%',
     marginTop: Value.CONSTANT_VALUE_8,
     alignItems: Alignment.CENTER,
     justifyContent: Alignment.CENTER,
@@ -22,7 +25,6 @@ export default {
   vdoText: {
     ...FontWithBold.Bold_400,
     fontSize: fontPixel(Value.CONSTANT_VALUE_16),
-    marginRight: widthPixel(Value.CONSTANT_VALUE_30),
   },
   shortsRow: {
     flexDirection: Alignment.ROW,
@@ -53,5 +55,17 @@ export default {
   },
   horizontalList: {
     marginTop: heightPixel(Value.CONSTANT_VALUE_8),
+  },
+  timerBox: {
+    position: 'absolute',
+    bottom:60,
+    height: heightPixel(Value.CONSTANT_VALUE_25),
+    width: widthPixel(Value.CONSTANT_VALUE_50),
+    borderRadius: widthPixel(Value.CONSTANT_VALUE_6),
+    justifyContent: Alignment.CENTER,
+    right:20,
+  },
+  miniText: {
+    textAlign: Alignment.CENTER,
   },
 };

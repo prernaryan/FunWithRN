@@ -7,15 +7,16 @@ import YoutubeMore from '@screens/Youtube/YoutubeMore';
 import YoutubeSubscription from '@screens/Youtube/YoutubeSubscription';
 import YoutubeLibrary from '@screens/Youtube/YoutubeLibrary';
 import TabBar from './CustomTabar';
+import YoutubeHomeStacks from './YoutubeHomeStacks';
 
 const Tab = createBottomTabNavigator();
 const YoutubeTabs = () => {
   return (
     <Tab.Navigator
-      initialRouteName={Routes.YoutubeHome}
+      initialRouteName={Routes.YoutubeHomeStacks}
       tabBar={props => <TabBar {...props} />}
       screenOptions={{headerShown: false}}>
-      <Tab.Screen name={Routes.YoutubeHome} component={YoutubeHome} />
+      <Tab.Screen name={Routes.YoutubeHomeStacks} component={YoutubeHomeStacks} />
       <Tab.Screen name={Routes.YoutubeShorts} component={YoutubeShorts} />
       <Tab.Screen name={Routes.YoutubeMore} component={YoutubeMore} />
       <Tab.Screen

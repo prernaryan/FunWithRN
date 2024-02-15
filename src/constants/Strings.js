@@ -15,4 +15,6 @@ export const Strings = {
   COMMENT_NO: '106',
   SHARE:'Share',
   REMIX:'Remix',
+  VIDEO_HEADNG:' Build your design system - Lesson 3 : \n Introduction to design systems',
+  VDO_SUBHEADING:'270K views  3 days ago  Config 2022  ...more'
 };

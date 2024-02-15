@@ -1,71 +1,45 @@
-import {View, Text, FlatList, TouchableOpacity} from 'react-native';
-import React from 'react';
+import {View, Text, FlatList, TouchableOpacity, Image} from 'react-native';
+import React, {useRef} from 'react';
 import styles from './styles';
 import {useTheme} from '../../../theme/ThemeProvider';
 import Avatar from '@assets/svg/Avatar';
 import {heightPixel, widthPixel} from '@utils/responsive';
 import {Strings, Value} from '@constants';
 import More from '@assets/svg/More';
-import {shortsData} from '@screens/EntryScreen/chooseData';
-import ShortsIconRed from '@assets/svg/ShortsIconRed';
+import Video from 'react-native-video';
+import VideoPlayer from 'react-native-video-controls';
 
-const YoutubeVideo = ({text}) => {
+const YoutubeVideo = ({item,onPress}) => {
   const {Colors} = useTheme();
-
-  const renderShorts = ({item}) => {
-    return (
-      <View
-        style={[styles.shortsCotainer, {backgroundColor: Colors.labelBack}]}>
-        <More
-          Colors={Colors}
-          style={styles.moreIcon}
-          width={widthPixel(Value.CONSTANT_VALUE_16)}
-          height={heightPixel(Value.CONSTANT_VALUE_16)}
-        />
-        <Text style={[styles.shortstitleText, {color: Colors.text}]}>
-          {item.title}
-        </Text>
+  return (
+    <TouchableOpacity onPress={onPress}>
+      <Image
+        source={{uri: item.thumbnail}}
+        style={[styles.mainContainer, {backgroundColor: Colors.labelBack}]}
+      />
+      <View style={[styles.timerBox, {backgroundColor: Colors.BLACK_400}]}>
+        <Text style={[styles.miniText, {color: Colors.WHITE}]}>12:40</Text>
       </View>
-    );
-  };
-  const VideoComp = () => {
-    return (
-      <TouchableOpacity>
-        <View
-          style={[styles.mainContainer, {backgroundColor: Colors.labelBack}]}
-        />
-        <View style={styles.row}>
+      <View style={styles.row}>
+        <View style={{flexDirection: 'row'}}>
           <Avatar
             width={widthPixel(Value.CONSTANT_VALUE_28)}
             height={heightPixel(Value.CONSTANT_VALUE_28)}
           />
-          <Text style={[styles.vdoText, {color: Colors.text}]}>{text}</Text>
-          <More
-            Colors={Colors}
-            width={widthPixel(Value.CONSTANT_VALUE_16)}
-            height={heightPixel(Value.CONSTANT_VALUE_16)}
-          />
+          <View style={{marginLeft: widthPixel(Value.CONSTANT_VALUE_30)}}>
+            <Text style={[styles.vdoText, {color: Colors.text}]}>
+              {item.title}
+            </Text>
+            <Text style={[{color: Colors.text}]}>{item.views}</Text>
+          </View>
         </View>
-      </TouchableOpacity>
-    );
-  };
-  return (
-    <>
-    <VideoComp/>
-      <View style={styles.shortsRow}>
-        <ShortsIconRed />
-        <Text style={[styles.shorts, {color: Colors.text}]}>
-          {Strings.SHORT}
-        </Text>
+        <More
+          Colors={Colors}
+          width={widthPixel(Value.CONSTANT_VALUE_16)}
+          height={heightPixel(Value.CONSTANT_VALUE_16)}
+        />
       </View>
-      <FlatList
-        data={shortsData}
-        renderItem={renderShorts}
-        horizontal
-        style={styles.horizontalList}
-        showsHorizontalScrollIndicator={false}
-      />
-    </>
+    </TouchableOpacity>
   );
 };
 

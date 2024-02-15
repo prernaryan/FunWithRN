@@ -116,3 +116,30 @@ export const profilesDataSubscription =[
     text: 'Kola Bear',
   },
 ]
+
+export const containersData = [
+  {
+    id: 1,
+    text: '625',
+  },
+  {
+    id: 2,
+    text: 'share',
+  },
+  {
+    id: 3,
+    text: 'Download',
+  },
+  {
+    id: 4,
+    text: 'Remix',
+  },
+  {
+    id: 5,
+    text: 'Thanks',
+  },
+  {
+    id: 6,
+    text: 'Clip',
+  },
+]
