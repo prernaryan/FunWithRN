@@ -11,7 +11,7 @@ export const renderIcon = (label, isFocues, dark, Colors) => {
   let height = heightPixel(Value.CONSTANT_VALUE_24);
   let width = widthPixel(Value.CONSTANT_VALUE_24);
   switch (label) {
-    case Routes.YoutubeHome:
+    case Routes.YoutubeHomeStacks:
       return (
         <HomeIcon
           height={height}

@@ -11,9 +11,9 @@ import Svg, {
   ClipPath,
   Image,
 } from 'react-native-svg';
-const Avatar = ({onPress, width, height}) => {
+const Avatar = ({onPress, width, height,style}) => {
   return (
-    <TouchableOpacity onPress={onPress}>
+    <TouchableOpacity onPress={onPress} style={style}>
       <Svg
         width={width}
         height={height}

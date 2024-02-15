@@ -3,6 +3,7 @@ export const Routes = {
   EntryScreen: 'EntryScreen',
   NetflixSplash: 'NetflixSplash',
   NetflixNav: 'NetflixNav',
+  NetflixOptions:'NetflixOptions',
   YoutubeSplash: 'YoutubeSplash',
   YouTubeNav: 'YouTubeNav',
   YoutubeHome: 'YoutubeHome',
@@ -11,6 +12,8 @@ export const Routes = {
   YoutubeMore: 'YoutubeMore',
   YoutubeSubscription: 'YoutubeSubscription',
   YoutubeTabs: 'YoutubeTabs',
+  YoutubeDetailVideo:'YoutubeDetailVideo',
+  YoutubeHomeStacks:'YoutubeHomeStacks'
 };
 export const Regx = {
   MOBILE_REGEX: /^(0)?[1-9]\d{7,14}$/,
@@ -113,24 +116,4 @@ export const ageOptions = [
   {label: '24', value: '7'},
 ];
 
-export const DiseaseData = [
-  {id: 1, name: 'General'},
-  {id: 2, name: 'Heart Disease'},
-  {id: 3, name: 'Stroke'},
-  {id: 4, name: 'Diabetes'},
-  {id: 5, name: 'Obesity'},
-  {id: 6, name: 'Arthritis'},
-  {id: 7, name: 'Blood Pressure'},
-  {id: 8, name: 'Kidney'},
-];
 
-export const diseaseOptions = [
-  {label: 'General', value: '1'},
-  {label: 'Heart Disease', value: '2'},
-  {label: 'Stroke', value: '3'},
-  {label: 'Diabetes', value: '4'},
-  {label: 'Obesity', value: '5'},
-  {label: 'Arthritis', value: '6'},
-  {label: 'Blood Pressure', value: '7'},
-  {label: 'Kidney', value: '8'},
-];

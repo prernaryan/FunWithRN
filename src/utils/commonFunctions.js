@@ -45,7 +45,7 @@ export const calculateBMI = (heightFt, weight) => {
 };
 export const getTabName = label => {
   switch (label) {
-    case Routes.YoutubeHome:
+    case Routes.YoutubeHomeStacks:
       return 'Home';
     case Routes.YoutubeShorts:
       return 'Shorts';
